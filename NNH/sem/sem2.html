@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="../nav/nnhicon.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="TtNL9G3o7P5iHPxrK_N3kUJvanidGTUtzKgATR0jWzA" />
+    <meta name="description" content="NMAMIT Notes Hub for NMAMIT IT Students.">
+    <meta name="keywords" content="nmamit notes hub, notes,laksh">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <title>CHEMISTRY CYCLE</title>
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff3eb;
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+
+header {
+            background-color: #fff3db;
+            color: #ff0000;
+            text-decoration-line: #000000;
+            padding: 20px 0;
+            border-bottom: 2px solid #e43131;
+            border-radius: 8px;
+            font-family: 'Roboto', sans-serif;
+            opacity: 0;
+            animation: fadeIn 1s ease forwards 0.5s;
+        }
+
+        header h1 {
+             font-weight: 900; /* ✅ Super thick */
+      letter-spacing: 2px;
+      margin: 0;
+        }
+        
+        h3 {
+            color: #000000;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            justify-content: center;
+            opacity: 0;
+            animation: fadeIn 0.5s ease forwards;
+        }
+
+        .menu-item:nth-child(1) {
+            animation-delay: 0.5s;
+        }
+
+        .menu-item:nth-child(2) {
+            animation-delay: 0.55s;
+        }
+
+        .menu-item:nth-child(3) {
+            animation-delay: 0.60s;
+        }
+
+        .menu-item:nth-child(4) {
+            animation-delay: 0.65s;
+        }
+
+        .menu-item:nth-child(5) {
+            animation-delay: 0.70s;
+        }
+
+        .menu-item:nth-child(6) {
+            animation-delay: 0.75s;
+        }
+
+        .menu-item:nth-child(7) {
+            animation-delay: 0.80s;
+        }
+
+        .menu-item:nth-child(8) {
+            animation-delay: 0.80s;
+        }
+        .menu-item:nth-child(9) {
+            animation-delay: 0.80s;
+        }
+        .menu-item:nth-child(10) {
+            animation-delay: 0.80s;
+        }
+        .menu-item:nth-child(11) {
+            animation-delay: 0.80s;
+        }
+
+
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #000000;
+            opacity: 0;
+            animation: fadeIn 0.82s ease forwards 0.9s;
+        }
+
+        button {
+            padding: 15px;
+            width: 100%;
+            background: linear-gradient(to right, #000000, #fd2828);
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: opacity 0.3s, transform 0.3s;
+            margin-right: 10px;
+        }
+
+        button:hover {
+            opacity: 0.8;
+            transform: scale(1.05);
+        }
+
+        .search-container {
+            margin: 20px 0;
+        }
+
+        input[type="text"] {
+            width: 75%;
+            /* Adjust the width as needed */
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #081174;
+            font-size: 1em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus {
+            border-color: #2193b0;
+            outline: none;
+        }
+
+        
+   
+        .marquee-container {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            background-color: #f1f1f1;
+            padding: 5px 0;
+            position: relative;
+        }
+
+        .marquee {
+            display: inline-block;
+            animation: continuous-scroll 10s linear infinite;
+            position: relative;
+        }
+
+        @keyframes continuous-scroll {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .marquee a {
+            color: blue;
+            text-decoration: underline;
+            margin-left: 10px;
+        }
+
+    </style>
+    <script>
+        const courses = [
+            { name: 'Applied Digital Logic Design', code: 'EC1002-2', link: 'ec.html' },
+            { name: 'Basic Electrical Engineering', code: 'EE1001-2', link: 'ee.html' },
+            { name: 'Biology for Engineers', code: 'BT1651-1', link: 'bt.html' },
+            { name: 'Discrete Mathematics and Transform Techniques', code: 'MA1007-1', link: 'mat.html' },
+            { name: 'Engineering Visualization', code: 'ME1004-1', link: 'me.html' },
+            { name: 'Environmental Studies and Sustainability', code: 'CV1005-1', link: 'cv.html' },
+            { name: 'Introduction to Python Programming', code: 'CS1005-2', link: 'py.html' },
+            { name: 'Materials Chemistry for Computer Systems', code: 'CY1003-1', link: 'cy.html' },
+            { name: 'Constitution of India', code: 'HU1002-1', link: 'coi.html' },
+            { name: 'Technical English', code: 'HU1001-1', link: 'te.html' }
+
+        ];
+
+        function filterCourses() {
+            const searchInput = document.getElementById('searchInput').value.toLowerCase();
+            const menuList = document.getElementById('menuList');
+            menuList.innerHTML = ''; // Clear current list
+
+            const filteredCourses = courses.filter(course =>
+                course.name.toLowerCase().includes(searchInput) ||
+                course.code.toLowerCase().includes(searchInput)
+            );
+
+            filteredCourses.forEach(course => {
+                const menuItem = document.createElement('div');
+                menuItem.classList.add('menu-item');
+                menuItem.innerHTML = `
+                    <button onclick="window.location.href='${course.link}'">${course.name}</button>
+                    <button onclick="window.location.href='${course.link}'">${course.code}</button>
+                `;
+                menuList.appendChild(menuItem);
+            });
+
+            if (filteredCourses.length === 0) {
+                menuList.innerHTML = '<p>No courses found. Please try a different search.</p>';
+            }
+        }
+    </script>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RQ7R2JQ63Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-RQ7R2JQ63Q'); // Replace with your GA4 Measurement ID
+</script>
+
+  
+</head>
+
+<body>
+    <header>
+        <h1>CHEMISTRY CYCLE</h1>
+    </header>
+   
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search Course" onkeyup="filterCourses()" />
+    </div>
+
+    <h3 class="available-pdfs">Available Courses:</h3>
+    <div class="menu" id="menuList">
+        <div class="menu-item">
+    <button onclick="window.location.href='../subjects/ADLD/0.html'">
+        <i class="fas fa-microchip"></i> APPLIED DIGITAL LOGIC DESIGN
+    </button>
+</div>
+<div class="menu-item">
+    <button onclick="window.location.href='../subjects/BEE/0.html'">
+        <i class="fas fa-bolt"></i> BASIC ELECTRICAL ENGINEERING
+    </button>
+</div>
+<div class="menu-item">
+    <button onclick="window.location.href='../subjects/BfE/0.html'">
+        <i class="fas fa-dna"></i> BIOLOGY FOR ENGINEERS
+    </button>
+</div>
+<div class="menu-item">
+    <button onclick="window.location.href='../subjects/DMTT/0.html'">
+        <i class="fas fa-calculator"></i> DISCRETE MATHEMATICS AND TRANSFORM TECNIQUES
+    </button>
+</div>
+<div class="menu-item">
+    <button onclick="window.location.href='../subjects/EV/0.html'">
+        <i class="fas fa-drafting-compass"></i> ENGINEERING VISUALIZATION
+    </button>
+</div>
+<div class="menu-item">
+    <button onclick="window.location.href='../subjects/EVS/0.html'">
+        <i class="fas fa-leaf"></i> ENVIRONMENTAL STUDIES AND SUSTAINABILITY
+    </button>
+</div>
+<div class="menu-item">
+    <button onclick="window.location.href='../subjects/IPP/0.html'">
+        <i class="fab fa-python"></i> INTRODUCTION TO PYTHON PROGRAMMING
+    </button>
+</div>
+<div class="menu-item">
+    <button onclick="window.location.href='../subjects/MCfCS/0.html'">
+        <i class="fas fa-flask"></i> MATERIAL CHEMISTRY FOR COMPUTERR SYSTEMS
+    </button>
+</div>
+<div class="menu-item">
+    <button onclick="window.location.href='../subjects/TE/0.html'">
+        <i class="fas fa-language"></i> TECHNICAL ENGLISH
+    </button>
+</div>
+<div class="menu-item">
+    <button onclick="window.location.href='../subjects/COI/0.html'">
+        <i class="fas fa-landmark"></i> CONSTITUTION OF INDIA
+    </button>
+</div>
+
+            
+    </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Notes For NMAMIT's by NMAMITIAN</p>
+    </footer>
+</body>
+
+</html>
